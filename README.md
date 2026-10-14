@@ -1,8 +1,6 @@
 <div align="center">
 
-# 技术学习记录
-
-**课程线 + 技术自学线**
+![技术学习记录](assets/banner.png)
 
 ![课程笔记](https://img.shields.io/badge/%E8%AF%BE%E7%A8%8B%E7%BA%BF-%E8%AF%BE%E5%A0%82%E7%BA%AA%E8%A6%81%20%2B%20%E4%BD%9C%E4%B8%9A-1B44C8?style=flat-square)
 ![技术自学](https://img.shields.io/badge/%E6%8A%80%E6%9C%AF%E8%87%AA%E5%AD%A6-%E9%9D%9E%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%96%B9%E5%90%91-E4593A?style=flat-square)
@@ -31,6 +29,12 @@
 
 ## 🗺️ 知识地图
 
+![学习进度](assets/progress.png)
+
+<details>
+<summary><b>详细清单（每门课掌握了什么）</b></summary>
+
+
 图例：`██████████` ✅ 能自己讲清＋动手做过 ｜ `██████░░░░` 🟡 正在学 ｜ `░░░░░░░░░░` ⬜ 还没开始
 
 | 模块 | 状态 | 已经掌握的内容 | 笔记 |
@@ -42,6 +46,8 @@
 | 人工智能概论 | `██████░░░░` 🟡 | 词元化与 BPE、Token ID 与向量化、Word2Vec（Skip-gram/CBOW）、语言模型演进、Transformer 架构与四大组件 | [笔记](人工智能概论/20261013_词元化_词向量与Transformer架构.md) |
 | 工具与工程 | `██████░░░░` 🟡 | WSL/Linux 常用命令、Git 提交与推送、提交前隐私扫描 | [笔记](工具与工程/20260921_Linux与Git工作流.md) |
 | 刷题记录 | `░░░░░░░░░░` ⬜ | 按主题记录思路与复杂度 | — |
+
+</details>
 
 📚 **学习资源汇总 → [学习资源.md](学习资源.md)**（按主题归档；每次拿到新资源自动追加）
 
