@@ -1,6 +1,12 @@
 # 人工智能概论（课程）
 
-**待学（待学清单 P2）**：课程要点整理，期末前集中。
+课堂纪要与考点整理都放**本目录** ✓（属课程线）。
 
-与 AI 线仓库互相引用：概念性内容记在 [ai-learning-log](https://github.com/Larquy/ai-learning-log)，
-本目录只放课程相关的考点整理与作业。
+> 分工：**课程**（含本课）的课堂纪要 → 放本仓库；
+> **自学线**（按阶段路线学大模型/AI4DB/分布式训练 + 论文阅读）→ 放 [ai-learning-log](https://github.com/Larquy/ai-learning-log) ✓
+> 同主题**不重复维护** ✓
+
+## 笔记
+
+- [20261013 词元化、词向量与 Transformer 架构](20261013_词元化_词向量与Transformer架构.md)
+  （词元化/BPE → Token ID 与向量化 → Word2Vec → 语言模型演进 → Transformer 架构与四大组件 → 课后思考题）
