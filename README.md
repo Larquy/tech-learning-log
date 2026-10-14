@@ -4,7 +4,11 @@
 
 ![技术学习记录](assets/banner.png)
 
-![课程笔记](https://img.shields.io/badge/%E8%AF%BE%E7%A8%8B%E7%BA%BF-%E8%AF%BE%E5%A0%82%E7%BA%AA%E8%A6%81%20%2B%20%E4%BD%9C%E4%B8%9A-1B44C8?style=flat-square)
+<!-- BADGE:BEGIN -->
+[![课程](https://img.shields.io/badge/%E8%AF%BE%E7%A8%8B-07-1B44C8?style=flat-square)](#map)
+[![进行中](https://img.shields.io/badge/%F0%9F%9F%A1%20%E8%BF%9B%E8%A1%8C%E4%B8%AD-22-E4593A?style=flat-square)](#map)
+[![待学](https://img.shields.io/badge/%F0%9F%93%8C%20%E5%BE%85%E5%AD%A6-%E6%B8%85%E5%8D%95-6b7893?style=flat-square)](#todo)
+<!-- BADGE:END -->
 ![技术自学](https://img.shields.io/badge/%E6%8A%80%E6%9C%AF%E8%87%AA%E5%AD%A6-%E9%9D%9E%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%96%B9%E5%90%91-E4593A?style=flat-square)
 
 </div>
