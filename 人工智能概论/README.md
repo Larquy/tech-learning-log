@@ -10,3 +10,9 @@
 
 - [20261013 词元化、词向量与 Transformer 架构](20261013_词元化_词向量与Transformer架构.md)
   （词元化/BPE → Token ID 与向量化 → Word2Vec → 语言模型演进 → Transformer 架构与四大组件 → 课后思考题）
+
+## 这一阶段的笔记
+
+- [词元化_词向量与Transformer架构](20261013_词元化_词向量与Transformer架构.md)
+
+[← 返回仓库首页](../README.md)

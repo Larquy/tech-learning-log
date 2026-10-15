@@ -216,11 +216,18 @@ def make_stage_readmes():
         if not d.is_dir() or d.name in ("assets", "tools", ".git"):
             continue
         r = d / "README.md"
-        if r.exists():
-            continue
-        title, desc = STAGES.get(d.name, (d.name + "/", ""))
         mds = sorted(p.name for p in d.glob("*.md") if not p.name.startswith("README"))
         lst = "\n".join(f"- [{m[:-3][9:]}]({m})" for m in mds) or "- （本阶段还没有笔记）"
+        if r.exists():
+            # 已有 README：保留标题与描述，只刷新笔记清单（否则新加的笔记永远不会出现在目录里）
+            old = r.read_text(encoding="utf-8")
+            head = old.split("## 这一阶段的笔记")[0].rstrip()
+            new = f"{head}\n\n## 这一阶段的笔记\n\n{lst}\n\n[← 返回仓库首页](../README.md)\n"
+            if new != old:
+                r.write_text(new, encoding="utf-8")
+                made.append(str(r.relative_to(ROOT)) + "（刷新）")
+            continue
+        title, desc = STAGES.get(d.name, (d.name + "/", ""))
         r.write_text(f"# {title}\n\n{desc}\n\n## 这一阶段的笔记\n\n{lst}\n\n[← 返回仓库首页](../README.md)\n",
                      encoding="utf-8")
         made.append(str(r.relative_to(ROOT)))
