@@ -177,9 +177,21 @@ def nav_block():
     lines = [NAV_BEGIN, '<div align="center">', "", links, "", "</div>", "",
              '<a id="nav"></a>', "", "## 📂 分类导航", "", "| 目录 | 笔记 |", "|---|---|"]
     for name, mds in scan_dirs():
-        cell = " ｜ ".join(f"[{'README' if m == 'README.md' else m[:-3][9:]}]({name}{m})" for m in mds[:6])
+        show = mds[-6:]
+        cell = " ｜ ".join(f"[{'README' if m == 'README.md' else m[:-3][9:]}]({name}{m})" for m in show)
+        if len(mds) > 6:
+            cell += f"　…共 {len(mds)} 篇"
         lines.append(f"| `{name}` | {cell} |")
-    lines.append(timeline_block())
+    lines += ["", "## 📈 进度概览", "", "| 目录 | 篇数 | 最近更新 |", "|---|---|---|"]
+    rows = []
+    for name, mds in scan_dirs():
+        dates = [m[:8] for m in mds if m[:8].isdigit()]
+        if not dates:
+            continue
+        last = max(dates)
+        rows.append((last, f"| `{name}` | {len(mds)} | {last[:4]}-{last[4:6]}-{last[6:]} |"))
+    for _, r in sorted(rows, reverse=True):
+        lines.append(r)
     lines.append(timeline_block())
     lines += ["", "[↑ 回到顶部](#top)", "", NAV_END]
     return "\n".join(lines)
