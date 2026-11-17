@@ -11,7 +11,7 @@ CFG = {
     "title": "技术学习记录",
     "sub":   "课程线 + 技术自学线",
     "stat1": "07", "lab1": "门 课 程", "badge1": "课程",
-    "stat2": "23", "lab2": "篇 笔 记",
+    "stat2": "24", "lab2": "篇 笔 记",
 }
 BLUE, ORANGE, GREY = "#1B44C8", "#E4593A", "#c3cad6"
 ROOT = pathlib.Path(__file__).resolve().parent.parent
